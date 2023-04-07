@@ -1,0 +1,86 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.5",
+    "body": [
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Kudos!",
+                    "size": "Large",
+                    "weight": "Bolder"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Who would you like to give Kudos!",
+                    "wrap": true
+                },
+                {
+                    "type": "Input.Text",
+                    "id": "recipientName",
+                    "placeholder": "Enter name of recipient"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "What type of Kudos is it?",
+                    "wrap": true
+                },
+                {
+                    "type": "Input.ChoiceSet",
+                    "id": "kudosType",
+                    "choices": [
+                        {
+                            "title": "WOW Our Customers",
+                            "value": "wow"
+                        },
+                        {
+                            "title": "WIN as a Team",
+                            "value": "win"
+                        },
+                        {
+                            "title": "Create Belonging",
+                            "value": "belonging"
+                        },
+                        {
+                            "title": "Stay Hungry and Humble",
+                            "value": "hungry"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "What is the reason for your Kudos!",
+                    "wrap": true
+                },
+                {
+                    "type": "Input.Text",
+                    "id": "praiseReason",
+                    "placeholder": "Enter reason for Kudos!"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "Submit"
+        }
+    ]
+}
